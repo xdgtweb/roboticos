@@ -1,0 +1,158 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 31 oct 2022, 18:27:55
+    Author     : xxxdd
+*/
+
+#letraTitulo
+{
+    font-family: titulo;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-left: 8px;
+    margin-top: 10px;
+    justify-content: center;
+    align-content: center;
+    letter-spacing: 0;
+    background: url(../imagenes/navFooter/fondoTituloTransicionOscuro.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 50s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+.letraNav
+{
+    color: black;
+    font-family: nav;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.letraFooter
+{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: black;
+    font-family: footer;
+    position: absolute;
+    top: 50px;
+    left: 15px;
+}
+
+.tipoLetraMain
+{
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    color: white;
+    font-family: titulo;
+    margin-top: 20px;
+    border: red 1px solid;
+}
+
+
+@font-face 
+{
+    font-family: titulo;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../TiposDeLetra/GiantRobotArmy-Medium.ttf);
+}
+
+@font-face 
+{
+    font-family: nav;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../TiposDeLetra/MADEOkineSansPERSONALUSE-Light.otf);
+}
+
+@font-face 
+{
+    font-family: footer;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../TiposDeLetra/made_okine_sans/MADEOkineSansPERSONALUSE-Light.otf);
+}
+
+/* TRANSICION FONDO TITULO */
+@-webkit-keyframes aitf
+{
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+@media only screen and (max-width: 1080px)
+{
+    
+    #letraTitulo
+    {
+        position: absolute;
+        top: 61px;
+        right: 4px;
+        font-family: titulo;
+        font-size: 15px;
+        font-weight: lighter;
+        margin-left: 0px;
+        margin-top: 0px;
+        justify-content: center;
+        align-content: center;
+        letter-spacing: 0;
+        background: url() repeat-y;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: aitf 50s linear infinite;
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        background-color: black;
+    }
+    
+    .letraFooter
+    {
+        width: 55px;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        color: black;
+        font-family: footer;
+        position: absolute;
+        top: 195px;
+        left: 9px;
+    }
+    
+    .tipoLetraMain
+    {
+        font-size: 25px;
+    }
+    
+
+}
+
+@media only screen and (max-width: 720px)
+{
+    .tipoLetraMain
+    {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 570px)
+{
+
+}
+
+@media only screen and (max-width: 590px)
+{
+
+}

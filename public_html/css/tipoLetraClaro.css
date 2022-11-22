@@ -1,0 +1,96 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 31 oct 2022, 18:27:55
+    Author     : xxxdd
+*/
+
+#letraTitulo
+{
+    font-family: titulo;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-left: 8px;
+    margin-top: 10px;
+    justify-content: center;
+    align-content: center;
+    letter-spacing: 0;
+    background: url(../imagenes/navFooter/fondoTituloTransicionClaro.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 50s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+.letraNav
+{
+    color: white;
+    font-family: nav;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.letraFooter
+{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: white;
+    font-family: footer;
+    position: absolute;
+    top: 50px;
+    left: 15px;
+}
+
+
+@font-face 
+{
+    font-family: titulo;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../TiposDeLetra/GiantRobotArmy-Medium.ttf);
+}
+
+@font-face 
+{
+    font-family: nav;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../TiposDeLetra/MADEOkineSansPERSONALUSE-Light.otf);
+}
+
+@font-face 
+{
+    font-family: footer;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../TiposDeLetra/made_okine_sans/MADEOkineSansPERSONALUSE-Light.otf);
+}
+
+/* TRANSICION FONDO TITULO */
+@-webkit-keyframes aitf
+{
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+@media only screen and (max-width: 980px)
+{
+
+    
+    
+}
+
+@media only screen and (max-width: 590px)
+{
+
+}

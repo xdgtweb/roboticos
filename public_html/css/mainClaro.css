@@ -1,0 +1,225 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 6 oct 2022, 17:10:06
+    Author     : xxxdd
+*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.col-1, .col-2, .col-3, .col-4,  .col-5,  .col-6, 
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    display: block;
+}
+
+.col-1 { width: 8.33333%; height: auto}	    /* Columna de  1 unidad    (1 / 12 de fila) */
+.col-2 { width: 16.66666%; }	/* Columna de  2 unidades  (2 / 12 de fila) */
+.col-3 { width: 25%; }		    /* Columna de  3 unidades  (3 / 12 de fila) */
+.col-4 { width: 33.33333%; }	/* Columna de  4 unidades  (4 / 12 de fila) */
+.col-5 { width: 41.66666% }	    /* Columna de  5 unidades  (5 / 12 de fila) */
+.col-6 { width: 50%;}		    /* Columna de  6 unidades  (6 / 12 de fila) */
+.col-7 { width: 58.33333%; }	/* Columna de  7 unidades  (7 / 12 de fila) */
+.col-8 { width: 66.66666%; }	/* Columna de  8 unidades  (8 / 12 de fila) */
+.col-9 { width: 75%; }		    /* Columna de  9 unidades  (9 / 12 de fila) */
+.col-10 { width: 83.33333%; }	/* Columna de 10 unidades (10 / 12 de fila) */
+.col-11 { width: 91.66666%; }	/* Columna de 12 unidades (11 / 12 de fila) */
+.col-12 { width: 100%; }	    /* Columna de 12 unidades (12 / 12 de fila) */
+
+.fil-6 {height: 100%}
+
+
+/*.col-6
+{
+    border:  3px red solid;
+}*/
+
+/*.fil-6
+{
+    border:  3px blue solid;
+}*/
+
+body #contenido
+{
+/*    border: blueviolet 3px solid;*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 235px; /* desplaza el main */
+    padding-top: 15px; /* margenes visuales */
+    padding-bottom: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+body #contenido main::-webkit-scrollbar
+{
+    display: none;
+}
+
+body #contenido main
+{
+    display: inline-flex;
+    border-bottom: #FF5100 10px solid;
+    border-top: #FF5100 10px solid;
+    border-left: #FF5100 5px solid;
+    border-right: #FF5100 5px solid;
+    overflow-x: scroll;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+/*/*    background-repeat: no-repeat;*/
+    background-size: cover;
+    background-position: center center;
+}
+
+body #contenido main::-webkit-scrollbar
+{
+    display: none;
+}
+
+body #contenido main .col-6:nth-child(1) .fil-6 a
+{
+    text-decoration: none;
+}
+
+body #contenido main .col-6:nth-child(2) .fil-6 a
+{
+    text-decoration: none;
+}
+
+body #contenido main .col-6:nth-child(1) .fil-6 a .fondoImagen
+{
+    background: url("../imagenes/main/Index/1.png") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+body #contenido main .col-6:nth-child(2) .fil-6 a .fondoImagen
+{
+    background: url("../imagenes/main/Index/2.png") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+body #contenido main .col-6 .fil-6 a .fondoImagen .fondoBorroso
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+body #contenido main .col-6 .fil-6 a .fondoImagen .fondoBorroso .imagen
+{
+
+    text-align: center;
+    position: relative;
+    top: 27%;
+    transition: 0.3s;
+
+}
+
+body #contenido main .col-6 .fil-6 a:hover .fondoImagen .fondoBorroso .imagen
+{
+    top: 30%;
+    transition: 0.3s;
+}
+
+body #contenido main .col-6 .fil-6 a .fondoImagen .fondoBorroso .imagen img
+{
+    width: 390px; 
+    height: 252px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+body #contenido main .col-6 .fil-6 a:hover .fondoImagen .fondoBorroso .imagen img
+{
+    object-fit: fill;
+    width: 350px;
+    height: 222px;
+    transition: 0.3s;
+}
+
+body #contenido main .col-6 .fil-6 a .fondoImagen .fondoBorroso .imagen h3
+{
+    font-family: titulo;
+    font-size: 24px;
+    margin-top: 10px;
+    transition: 0.3s;
+    color: white;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+    -webkit-text-stroke: 0.1px black;
+}
+
+body #contenido main .col-6 .fil-6 a:hover .fondoImagen .fondoBorroso .imagen h3
+{
+    color: #FF5100;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 1280px)
+{
+    
+    body #contenido main .row:nth-child(1) .borroso .imagen
+    {
+        width: 400px;
+        transition: 0.3s;
+    }
+    
+    body #contenido main .row:nth-child(2) .borroso .imagen
+    {
+        width: 400px;
+        transition: 0.3s;
+    }
+    
+}
+
+@media only screen and (max-width: 1080px)
+{
+    body #contenido
+    {
+        padding-left: 80px; /* desplaza el main */
+        transition: 0.3s;
+    }
+    
+    body #contenido main .row:nth-child(1) .borroso .imagen
+    {
+        width: 300px;
+        transition: 0.3s;
+    }
+    
+    body #contenido main .row:nth-child(2) .borroso .imagen
+    {
+        width: 300px;
+        transition: 0.3s;
+    }
+}
+
+@media only screen and (max-width: 720px)
+{
+    body #contenido main .row:nth-child(1) .borroso .imagen
+    {
+        width: 250px;
+        transition: 0.3s;
+    }
+    
+    body #contenido main .row:nth-child(2) .borroso .imagen
+    {
+        width: 250px;
+        transition: 0.3s;
+    }
+}
